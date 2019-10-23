@@ -19,6 +19,6 @@ app.use(bodyParser.json());
 app.use(cors());
 
 //rutas 
-app.use('/',router);
+app.use('',router);
 
 module.exports = app;
