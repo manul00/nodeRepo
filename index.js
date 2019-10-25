@@ -111,7 +111,7 @@ app.delete('//delete/:fecha',(req,res)=>{
 		});
 });
 
-app.get('/',(req,res)=>{
+app.get('/login',(req,res)=>{
 
 		adminSchema.find({admin:'admin'}).exec((e,resul)=>{
 			if(e) return res.status(500).send({mesage: 'error al retornar los datos'});
