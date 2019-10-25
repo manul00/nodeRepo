@@ -88,7 +88,7 @@ var controller = {
 
 		deleteData: function(req, res){
 		var loteID = req.params.fecha;
-console.log(loteID);
+        console.log(loteID);
 		LoteSchema.findByIdAndDelete(loteID,(e, resul)=>{
 			if (e)      return res.status(500).send({mensaje:'Erro al eliminar el proyecto'});
 			if (!resul) return res.status(404).send({mensaje:'no se encontro el proyecto'});
