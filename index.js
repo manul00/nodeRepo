@@ -5,6 +5,7 @@ var app = express();
 var mongoose = require('mongoose');
 var loteSchema = require('./models/lote');
 var GanadorSchema = require('./models/ganadores');
+var adminSchema = require('./models/admin');
 var cors = require('cors');
 
 
