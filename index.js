@@ -4,6 +4,9 @@ var app = express();
 var mongoose = require('mongoose');
 var loteSchema = require('./models/lote');
 var GanadorSchema = require('./models/ganadores');
+var cors = require('cors');
+
+app.use(cors());
 
 app.set('port',(process.env.PORT || 8080))
 
